@@ -222,3 +222,81 @@ footer p {
     transform: scale(1.1); /* Méret növelése hover esetén */
 }
 
+
+
+
+/* Alapértelmezett stílus - számítógépen a képek mérete nem változik */
+img {
+    max-width: none;
+    height: auto;
+}
+
+/* Mobil nézethez (maximum 768px szélesség alatt) */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;  /* Mobil eszközökön a képek alkalmazkodnak a kijelző szélességéhez */
+        height: auto;
+    }
+}
+/* Alapértelmezett stílus - számítógéphez */
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.text-content {
+    width: 50%;
+}
+
+/* Mobil nézethez (maximum 768px szélesség alatt) */
+@media (max-width: 768px) {
+    .content-section {
+        display: block;  /* Mobilon a tartalom blokkokra oszlik, nem rácsban */
+        margin: 20px auto;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+}
+/* Asztali nézet tipográfiája */
+p {
+    font-size: 1.2em;  /* Asztali nézetben nagyobb betűméret */
+    line-height: 1.6;
+}
+
+/* Mobil nézethez (maximum 768px szélesség alatt) */
+@media (max-width: 768px) {
+    p {
+        font-size: 1em;  /* Mobilon kisebb betűméret */
+        line-height: 1.5;
+    }
+}
+/* Asztali nézet (nagy gomb és ikonok) */
+button#backToTop {
+    font-size: 1.5em;  
+    padding: 10px 15px;
+}
+
+/* Mobil nézethez (maximum 768px szélesség alatt) */
+@media (max-width: 768px) {
+    button#backToTop {
+        font-size: 1.2em;
+        padding: 8px 12px;
+    }
+}
+/* Asztali nézet (nagy gomb és ikonok) */
+button#backToTop {
+    font-size: 1.5em;  
+    padding: 10px 15px;
+}
+
+/* Mobil nézethez (maximum 768px szélesség alatt) */
+@media (max-width: 768px) {
+    button#backToTop {
+        font-size: 1.2em;
+        padding: 8px 12px;
+    }
+}
