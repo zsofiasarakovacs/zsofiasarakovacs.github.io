@@ -1,0 +1,224 @@
+/* Alap beállítások */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Fejléc formázása */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #670c0c;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Tartalom formázása */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Általános ismertető */
+.general-info {
+    text-align: center;
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Szöveg és képek szekció formázása */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content-section img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+}
+
+.text-content h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e1e;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Kapcsolat szekció */
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #1e1e1e;
+    margin: 0 15px;
+    font-size: 1.3em;
+}
+
+.contact a:hover {
+    color: #0073e6;
+}
+
+/* Footer formázása */
+footer {
+    background-color: #670c0c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* A "vissza a tetejére" gomb stílusa */
+#backToTop {
+    position: fixed; /* Rögzített pozíció a nézetablakban */
+    bottom: 80px; /* Az aljától való távolság */
+    right: 30px; /* A jobb szélétől való távolság */
+    background-color: #670c0c; /* Háttérszín */
+    color: white; /* Szöveg színe */
+    border: none; /* Nincs keret */
+    padding: 15px 20px; /* Párnázás */
+    border-radius: 20%; /* Kerek gomb */
+    font-size: 1.5em; /* Betűméret */
+    cursor: pointer; /* Kéz kurzor a gomb felett */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Árnyék */
+    transition: background-color 0.3s, transform 0.3s; /* Áttűnés hatás */
+    z-index: 1000; /* A gomb megjelenése a más elemek felett */
+}
+
+/* Lightbox CSS */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+/* Új képek formázása a szöveg alatt */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Képek közötti távolság */
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 250px; /* Képméret, ha szükséges */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dobókocka ikon stílus */
+.dice-section {
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#dice-icon {
+    font-size: 3em;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#dice-icon:hover {
+    color: #0073e6;
+}
+
+/* Fun fact buborék stílus */
+.fun-fact-bubble {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    z-index: 10;
+}
+
+.fun-fact-bubble p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+
+
+.bokkocka-text { /* Egyedi osztály szelektálása */
+    font-size: 24px; /* Betűméret */
+    text-align: center;
+    background-color: #ffffff; /* Paragrafus háttérszíne */
+    padding: 20px;
+    border-radius: 10px; /* Lekerekített sarkok */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Árnyék */
+}
+
+
+
+/* Hover állapot */
+#backToTop:hover {
+    background-color: #005bb5; /* Sötétebb kék hover esetén */
+    transform: scale(1.1); /* Méret növelése hover esetén */
+}
+
