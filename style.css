@@ -223,4 +223,31 @@ footer p {
 }
 
 
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-section img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .content-section img {
+        max-width: 100%;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
